@@ -1,0 +1,17 @@
+def up_low(s):
+  d = {'upper':0,'lower':0}
+  for char in s:
+    if char.isupper():
+      d['upper'] += 1
+    elif char.islower():
+      d['lower'] += 1
+    else:
+      pass
+  print(f'Original String: {s}')
+  print(f'Lowercase count: {d["lower"]}')
+  print(f'Uppercase count: {d["upper"]}')
+
+s = 'Hello Mr. arghun, how U doing Bro?'
+# up_low(s) -> Original String: Hello Mr. arghun, how U doing Bro?
+#              Lowercase count: 21
+#              Uppercase count: 4 
